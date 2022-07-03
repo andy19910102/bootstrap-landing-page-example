@@ -1,0 +1,236 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+
+#header {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding: 200px 0px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    /* TODO: 加入背景圖片 */
+    /* background-image: url(""); */
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+.intro-box,
+.intro-line,
+.intro-box .icon {
+    transition: all .3s ease;
+}
+
+.intro-box {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+
+.intro-box:hover {
+    background: white;
+    box-shadow: 0px 22px 22px rgba(0, 0, 0, .25);
+    bottom: 7px;
+}
+
+.intro-line {
+    width: 20px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+
+.intro-box:hover .intro-line {
+    width: 40px;
+}
+
+.intro-box .icon {
+    transform: scale(.8);
+}
+
+.intro-box:hover .icon {
+    transform: scale(1);
+}
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+.gallery-block,
+.gallery-text {
+    transition: all .5s ease-out;
+}
+
+.gallery-block {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+}
+
+.gallery-text {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.gallery-block:hover {
+    filter: grayscale(0%);
+}
+
+.gallery-block:hover .gallery-text {}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/gallery-image-1.jpg');
+}
+
+#galleryImage2 {
+    background-image: url('../img/gallery-image-2.jpg');
+}
+
+#galleryImage3 {
+    background-image: url('../img/gallery-image-3.jpg');
+}
+
+#galleryImage4 {
+    background-image: url('../img/gallery-image-4.jpg');
+}
+
+#galleryImage5 {
+    background-image: url('../img/gallery-image-5.jpg');
+}
+
+#galleryImage6 {
+    background-image: url('../img/gallery-image-6.jpg');
+}
+
+#galleryImage7 {
+    background-image: url('../img/gallery-image-7.jpg');
+}
+
+#galleryImage8 {
+    background-image: url('../img/gallery-image-8.jpg');
+}
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+/*=============================================
+=                  SIDE-BOX                   =
+=============================================*/
+
+.side-box {
+    width: 300px;
+    position: fixed;
+    right: -275px;
+    bottom: 80px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.side-box.active {
+    right: 0px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+}
+
+.ad-toggle-btn {
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+
+.ad-toggle-btn>i {
+    transform: rotateZ(90deg);
+}
+
+.ad-toggle-btn:hover {
+    color: #666;
+}
+
+.right-part {
+    padding: 10px;
+}
+
+.right-part>p {
+    margin-bottom: 0;
+}

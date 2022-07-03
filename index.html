@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap網頁練習範例 - HTML5,CSS3,Bootstrap,jQuery網頁設計基礎班</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- TODO: 
+        取得Bootstrap原始碼並客製化客製化Bootstrap樣式: 
+        https://getbootstrap.com/docs/5.2/getting-started/download/
+    -->
+
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introSection">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featuresSection">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallerySection">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="text-center text-white bg-secondary">
+        <div class="container">
+            <h1>Building something remarkable</h1>
+            <p>We focus on providing the project management &amp; data storage solutions.</p>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- introSection -->
+    <!-- 
+        ml-3 mr-3 => ?
+        mt-4 mb-4 => ?
+    -->
+    <!-- TODO: 設定introSection 上下padding為等級5 -->
+    <section id="introSection" class="py-5">
+        <h1 class="section-title text-center text-secondary mb-5">Intro</h1>
+        <div class="container">
+            <!-- TODO: 修正排版為三項排一排 -->
+            <div class="">
+                <div class="">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">Fast Deploy</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus aliquam dolor
+                            sit hic quae!</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-briefcase fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">Stable</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus aliquam dolor
+                            sit hic quae!</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-gem fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">Persistence</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus aliquam dolor
+                            sit hic quae!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO: 設定此區塊距離上方為等級5的margin -->
+            <!-- TODO: 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
+            <div class="">
+                <div class="text-center">
+                    <i class="fas fa-tree fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Cozy Office</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-coffee fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Free coffee bar</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-id-card fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Profesional Team</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-language fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Linguist</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-rocket fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Hackers Spirit</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-graduation-cap fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Self-Learning</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+    <!-- featuresSection -->
+    <section id="featuresSection" class="py-5 bg-light">
+        <div class="container">
+            <h1 class="section-title mb-5 text-center">Features</h1>
+            <!-- TODO: 設定row內的區塊置中對齊 -->
+            <div class="row">
+                <div class="col-sm-10 col-md-8">
+                    <!-- TODO: 為article1 article2 設置collapse互動方式 -->
+                    <div class="mb-3">
+                        <button data-bs-toggle="" data-bs-target="" class="btn btn-primary">Team</button>
+                        <button data-bs-toggle="" data-bs-target="" class="btn btn-primary">Location</button>
+                    </div>
+                    <article id="article1" class="">
+                        <div class="card card-body mb-3">
+                            <h3>Team</h3>
+                            <p>Our team members started with only 10 people. We're Website developer, Security engineer,
+                                Graphic
+                                Designer, Information Architect , But before the company scaled up, we're all wears more
+                                than
+                                one hat. We provide different kinds of
+                                <strong>Project management, Security and Data Storage solution package</strong> for our
+                                customers
+                            </p>
+                        </div>
+                    </article>
+                    <article id="article2" class="">
+                        <div class="card card-body mb-3">
+                            <h3>Location</h3>
+                            <p>We're based in Taipei Taiwan. There are several international branch offices in Hong
+                                Kong,
+                                New York,
+                                Albuquerque, Dublin and GuangDong. You could contact the nearest office for you, or if
+                                you're
+                                interested to work with us. please follow our recruit news</p>
+                        </div>
+                    </article>
+                    <!-- 導覽按鈕 -->
+                    <nav class="nav nav-pills">
+                        <button class="nav-link active" data-bs-toggle="" data-bs-target="">
+                            Environment
+                        </button>
+                        <button class="nav-link" data-bs-toggle="" data-bs-target="">
+                            Philosophy
+                        </button>
+                    </nav>
+                    <!-- TODO: 為article3 article4 設置tab互動方式 -->
+                    <div class="">
+                        <article id="article3" class="">
+                            <div class="card card-body my-3">
+                                <h3>Environment</h3>
+                                <p>We have a cozy office environment not just create casual atmosphere for daily working
+                                    time, but also
+                                    encourage our employee stay for the internal self-learning project hosted by our HR
+                                    and
+                                    Software
+                                    teams. It’s fun to learn challenging new things. We provide lots of courses in the
+                                    topic of
+                                    <strong>Languages learning, Software skill and Negotiation skill trainings.</strong>
+                                    Check out more details
+                                </p>
+                            </div>
+                        </article>
+                        <article id="article4" class="">
+                            <div class="card card-body my-3">
+                                <h3>Philosophy</h3>
+                                <p>We always keep our bussiness and products simple. So it will always be easy to learn
+                                    and
+                                    use. Our
+                                    goal is making it simple but effective. Even though it might be the first time to
+                                    use
+                                    that kinds
+                                    of product, we'll try to make sure every steps will be clear to understand for you.
+                                    If
+                                    needs
+                                    any helps, our technical support team will be always standing by.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featuresSection end -->
+
+    <!-- TODO: 產生一組輪播元件輪播一系列圖片 -->
+    <!-- 快捷鍵: b4-carousel-default -->
+    <!-- 圖片輪播 -->
+
+    <!-- 圖片輪播 end -->
+
+    <!-- modalSection -->
+    <section id="modalSection" class="bg-secondary py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center my-5">
+                <div class="col-md-3">
+                    <h4 class="text-white mb-4">New Version Released!</h4>
+                    <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
+                    <button data-bs-toggle="" data-bs-target="" class="btn btn-primary">Open
+                        Modal!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 彈出視窗 -->
+    <div class="modal fade" id="detailModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Some modal text...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 彈出視窗 end-->
+    <!-- modalSection end -->
+    <!-- gallerySection -->
+    <section id="gallerySection">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="galleryImage1" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo1</div>
+                </div>
+                <div id="galleryImage2" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo2</div>
+                </div>
+                <div id="galleryImage3" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo3</div>
+                </div>
+                <div id="galleryImage4" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo4</div>
+                </div>
+                <div id="galleryImage5" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo5</div>
+                </div>
+                <div id="galleryImage6" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo6</div>
+                </div>
+                <div id="galleryImage7" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo7</div>
+                </div>
+                <div id="galleryImage8" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo8</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallerySection end -->
+    <!-- footer -->
+    <footer id="footer" class="pt-5 bg-secondary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h4>Contact Us</h4>
+                    <a href="mailto:service@brand.com">service@brand.com</a>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Product</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Enterprice</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Resource</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Guilde</a>
+                        </li>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">API</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark mt-5 py-2">
+            <p class="text-center">&copy; Copy right <span id="yearShow"></span></p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- side-box -->
+    <div class="side-box">
+        <div class="left-part">
+            <button class="ad-toggle-btn">
+                <i class="fas fa-sort"></i>
+            </button>
+        </div>
+        <div class="right-part">
+            <img class="w-100" src="./img/header-image.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam ullam excepturi facilis aperiam.
+                Maiores mollitia nihil vitae ullam dolore?</p>
+            <div class="mt-2">
+                <button id="removeSideBoxBtn" class="btn btn-sm btn-danger">Close Box</button>
+            </div>
+        </div>
+    </div>
+    <!-- side-box end -->
+    <button id="goBackBtn" class="bg-primary">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
