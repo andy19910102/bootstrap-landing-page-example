@@ -28,8 +28,6 @@ button:focus {
 =============================================*/
 
 #header {
-    border-radius: 0px;
-    margin-bottom: 0px;
     padding: 200px 0px;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
     /* TODO: 加入背景圖片 */
