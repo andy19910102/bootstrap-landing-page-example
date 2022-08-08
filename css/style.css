@@ -35,7 +35,7 @@
 
 .intro-box:hover {
     background: white;
-    box-shadow: 0px 12px 50px rgba(112, 84, 99, 0.25), 0px 6px 60px rgba(102, 64, 84, 0.25);
+    box-shadow: 0px 12px 60px rgba(112, 84, 99, 0.25), 0px 0px 0px 3px rgba(112, 84, 99, 0.25);
     bottom: 7px;
 }
 
