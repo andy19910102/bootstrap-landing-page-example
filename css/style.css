@@ -79,13 +79,18 @@
     font-weight: 700;
     text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
     text-align: center;
+    opacity: 0;
+    transform: scale(.5) rotate(-90deg);
 }
 
 .gallery-block:hover {
     filter: grayscale(0%);
 }
 
-.gallery-block:hover .gallery-text {}
+.gallery-block:hover .gallery-text {
+    opacity: 1;
+    transform: scale(2.4) rotate(0deg);
+}
 
 /* 放入背景圖片 */
 
